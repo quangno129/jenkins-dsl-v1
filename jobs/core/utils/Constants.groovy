@@ -10,7 +10,7 @@ class Constants {
                     image_name       : "buddy_Trading",
                     repo_url         : "*********************",
                     repo_name        : "buddy_Trading",
-                    helmchart_oci    : ""*********************",",
+                    helmchart_oci    : "*********************",
                     helmchart_version: "1.0.14",
                     need_build_job   : true  // need to generate build job for this service?
             ]

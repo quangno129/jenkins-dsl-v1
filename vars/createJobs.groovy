@@ -5,7 +5,7 @@ def call(String branchName = 'main') {
                 deleteDir()
                 sh """
                     printenv
-                    git clone -b $branchName https://$TOKEN@github.com/cxptek/jenkins-lib lib --depth 1
+                    git clone -b main https://github.com/quangno129/jenkins-dsl-v1 lib --depth 1
                 """
             }
         }
@@ -13,8 +13,6 @@ def call(String branchName = 'main') {
         stage("Create folders and jobs") {
             jobDsl targets: [
                     'lib/jobs/core/*.groovy',
-                    'lib/jobs/v99/*.groovy',
-                    'lib/jobs/vchain/*.groovy',
             ].join('\n')
         }
     }

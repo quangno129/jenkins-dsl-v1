@@ -13,6 +13,15 @@ class Constants {
                     helmchart_oci    : "*********************",
                     helmchart_version: "1.0.14",
                     need_build_job   : true  // need to generate build job for this service?
+            ],
+            [
+                    name             : "buddy_Trading_v1",
+                    image_name       : "buddy_Trading_v1",
+                    repo_url         : "*********************",
+                    repo_name        : "buddy_Trading_v1",
+                    helmchart_oci    : "*********************",
+                    helmchart_version: "1.0.14",
+                    need_build_job   : true  // need to generate build job for this service?
             ]
     ]
 
